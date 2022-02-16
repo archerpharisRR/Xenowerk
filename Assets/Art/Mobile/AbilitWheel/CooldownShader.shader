@@ -38,8 +38,8 @@ Shader "Unlit/CooldownShader"
             };
 
             float4 _Color;
-            float1 _Thickness;
-            float1 _Progress;
+            float _Thickness;
+            float _Progress;
 
             v2f vert (appdata v)
             {
