@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
     public void OnPausePressed()
     {
         
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         igUI.SWitchToPauseMenu();
 
         

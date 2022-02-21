@@ -49,7 +49,7 @@ public class JoyStickZ : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
     public void OnPointerUp(PointerEventData eventData)
     {
         Debug.Log("Up");
-        transform.position = initialPos;
+        //transform.position = initialPos;
         Handle.position = Background.position;
         Input = Vector2.zero;
     }
