@@ -41,15 +41,7 @@ public class JoyStickZ : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
     public void OnPointerDown(PointerEventData eventData)
     {
            
-        if(Background.rect.width + forgivessRadius >= forgivessRadius)
-        {
-            transform.position = eventData.position;
-        }
 
-        if (Background.rect.height + forgivessRadius >= forgivessRadius)
-        {
-            transform.position = eventData.position;
-        }
 
 
     }

@@ -8592,7 +8592,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 08030201e16517043be9b35047597edb, type: 3}
 --- !u!4 &328767353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4959057358301152, guid: 90a18773e670f054680d2f39c76a5471, type: 3}
@@ -16384,7 +16384,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 5b6b198a3b3f52249a034790eeb79e07, type: 3}
 --- !u!1 &604806257
 GameObject:
   m_ObjectHideFlags: 0
@@ -20185,7 +20185,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 61d8e8a5303ca8a42879f8928e2814c3, type: 3}
 --- !u!1001 &752169337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21307,7 +21307,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: ae2c08f575c56394ea0f8d4585e22c4f, type: 3}
 --- !u!4 &778407685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4093150761176514, guid: 42e949fded9304745a989ca004f5bf58, type: 3}
@@ -27517,7 +27517,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 52dbf68897a5fae4cabc4593cd38f99b, type: 3}
 --- !u!1001 &942983279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35666,7 +35666,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: aaee1fa4a88e47d488ff65d27285ec38, type: 3}
 --- !u!1 &1191565639
 GameObject:
   m_ObjectHideFlags: 0
@@ -35744,7 +35744,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 26f7942b7faeffe48b17492f38a25ec2, type: 3}
 --- !u!4 &1191788141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4951343261086952, guid: e4d5c0d3d9b21f840a3309933254e833, type: 3}
@@ -45678,7 +45678,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 3c84b44c5acad4045905a5296ac77d2d, type: 3}
 --- !u!1001 &1532419872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49086,7 +49086,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 2701a65d33f22ea4c8c94fcedc0a5f9c, type: 3}
 --- !u!1001 &1627767255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57396,7 +57396,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 39d912fc67866f548ab10fbd22a48b76, type: 3}
 --- !u!1001 &1896854659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60648,7 +60648,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 5e0b78e372baf454498720e2db43fd3f, type: 3}
 --- !u!1001 &1994726102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64760,6 +64760,14 @@ PrefabInstance:
     - target: {fileID: 5466206309867629073, guid: 3e17ae981e6182c4e929f0312f817819, type: 3}
       propertyPath: m_Name
       value: InGameUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699795016008069144, guid: 3e17ae981e6182c4e929f0312f817819, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -139.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699795016008069144, guid: 3e17ae981e6182c4e929f0312f817819, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -26.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e17ae981e6182c4e929f0312f817819, type: 3}
