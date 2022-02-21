@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoubleTap
   m_EditorClassIdentifier: 
   CooldownTime: 5
-  Icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  Icon: {fileID: 21300000, guid: 6f7ed96f227e5244a8740451343f4e7e, type: 3}
   AbilityLevel: 3
   player: {fileID: 0}
   playerAnimator: {fileID: 0}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3382969172281911392}
   - component: {fileID: 2510229156125766429}
   - component: {fileID: 1781649820087741581}
+  - component: {fileID: -7415206209784727495}
   m_Layer: 5
   m_Name: RawImage-radar
   m_TagString: Untagged
@@ -33,11 +34,11 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -250}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &2510229156125766429
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -66,10 +67,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: d5ab85fbf2c0cea4c9e276935ceaa4f3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
+--- !u!114 &-7415206209784727495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7273916497569799277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb0bac574cab3b468ef807ff329225b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  insideRadarDistance: 20
+  blipSizePercentage: 5
+  rawImageBlipEnemy: {fileID: 3111387061764770608, guid: e0cdcd0eec294534485d28510adba602, type: 3}
+  rawImageBlipItems: {fileID: 5749935037493128160, guid: 68aeedeffe71c7a40a2352d024d5b532, type: 3}

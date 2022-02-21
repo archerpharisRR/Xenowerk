@@ -82,7 +82,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4503590311711321987, guid: cdb2fbd235f8fa74fb6df3ca4afaaea2, type: 3}
       propertyPath: cost
-      value: 600
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -4503590311711321987, guid: cdb2fbd235f8fa74fb6df3ca4afaaea2, type: 3}
       propertyPath: WeaponIcon

@@ -34,13 +34,10 @@ public class ActiveRadar : AbilityBase
     {
           
         yield return new WaitForSeconds(5);
-
+        radar.RemoveAllBlips();
         radar.enabled = false;
 
-        foreach (GameObject blip in blips)
-        {
-            Destroy(blip);
-        }
+     
 
         
 

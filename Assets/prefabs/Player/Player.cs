@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
+
     MovementComponent movementComp;
     InputActions inputActions;
     Animator animator;
@@ -266,6 +268,13 @@ public class Player : Character
     {
         base.NoHealthLeft();
         PlayerDead = true;
+        StartCoroutine(PlayerIsDead());
+    }
+
+    IEnumerator PlayerIsDead()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(0);
     }
 
     public PlayerSaveData GenerateSaveData()

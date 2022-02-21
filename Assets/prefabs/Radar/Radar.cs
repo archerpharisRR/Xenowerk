@@ -56,7 +56,7 @@ public class Radar : MonoBehaviour
        CalculateBlipPosition(normalisedTargetPosition);
         DrawBlip(blipPosition, prefabBlip);
     }
-    private void RemoveAllBlips()
+    public void RemoveAllBlips()
     {
         GameObject[] blips =
        GameObject.FindGameObjectsWithTag("Blip");
