@@ -8,6 +8,7 @@ public class SpeedUp : AbilityBase
 {
     [SerializeField] float SpeedBoostAmount;
     [SerializeField] float BuffTime;
+
     MovementComponent movementComp;
 
     public override void Init(AbilityComponent ownerAbilityComp)
@@ -19,8 +20,12 @@ public class SpeedUp : AbilityBase
 
     public override void ActivateAbility()
     {
-        movementComp.WalkingSpeed =  SpeedBoostAmount;
-        OwnerComp.StartCoroutine(HealthRegenCoroutine());
+        if (CommitAbility())
+        {
+            movementComp.WalkingSpeed = SpeedBoostAmount;
+            OwnerComp.StartCoroutine(HealthRegenCoroutine());
+            
+        }
     }
 
     private IEnumerator HealthRegenCoroutine()

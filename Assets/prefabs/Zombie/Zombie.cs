@@ -11,6 +11,8 @@ public class Zombie : Character
     float speed;
     Vector3 previousLocation;
     [SerializeField] float staminaReward = 0.5f;
+    [SerializeField] int creditReward;
+    CreditsSystem creditsSystem;
 
 
 
@@ -23,6 +25,7 @@ public class Zombie : Character
         animator = GetComponent<Animator>();
         ZombieRigidbody = GetComponent<Rigidbody>();
         previousLocation = transform.position;
+        creditsSystem = FindObjectOfType<CreditsSystem>();
     }
 
 
@@ -68,6 +71,7 @@ public class Zombie : Character
             AbilityComponent abilityComp = killer.GetComponent<AbilityComponent>();
             if (abilityComp)
             {
+                creditsSystem.ChangeCredits(creditReward);
                 abilityComp.ChangeStamina(staminaReward);
             }
         }

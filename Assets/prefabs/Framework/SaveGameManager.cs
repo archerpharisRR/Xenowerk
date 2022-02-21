@@ -56,6 +56,7 @@ public static class SaveGameManager
       
         SceneManager.LoadScene(currentLoadedData.LevelIndex);
         SceneManager.sceneLoaded += OnSceneLoaded;
+        Time.timeScale = 1;
 
 
 

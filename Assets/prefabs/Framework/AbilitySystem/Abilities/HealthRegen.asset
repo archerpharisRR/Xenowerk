@@ -15,3 +15,5 @@ MonoBehaviour:
   CooldownTime: 5
   Icon: {fileID: 21300000, guid: 24245bceac6f3fe498664a43de2675bb, type: 3}
   AbilityLevel: 1
+  RegenAmount: 2.5
+  RegenTime: 2

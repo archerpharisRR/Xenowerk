@@ -93,6 +93,10 @@ PrefabInstance:
       value: Rifle
       objectReference: {fileID: 0}
     - target: {fileID: -4503590311711321987, guid: cdb2fbd235f8fa74fb6df3ca4afaaea2, type: 3}
+      propertyPath: firingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8d93bed36080e664da4287b3eb38e67d, type: 3}
+    - target: {fileID: -4503590311711321987, guid: cdb2fbd235f8fa74fb6df3ca4afaaea2, type: 3}
       propertyPath: shootingSpeed
       value: 10
       objectReference: {fileID: 0}

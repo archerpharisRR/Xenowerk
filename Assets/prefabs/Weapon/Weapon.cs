@@ -20,6 +20,7 @@ public class Weapon : MonoBehaviour
     public float shootingSpeed = 1.0f;
     [SerializeField] string weaponName;
     [SerializeField] int cost;
+    [SerializeField] AudioClip firingSound;
     public WeaponInfo GetWeaponInfo()
     {
         return new WeaponInfo()
@@ -30,6 +31,11 @@ public class Weapon : MonoBehaviour
             ShootSpeed = this.shootingSpeed,
             cost = this.cost
         };
+    }
+
+    public AudioClip FiringSound()
+    {
+        return firingSound;
     }
 
     public Sprite GetWeaponIcon() { return WeaponIcon; }
@@ -46,7 +52,6 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void Equip()
@@ -61,9 +66,12 @@ public class Weapon : MonoBehaviour
 
     public void Fire()
     {
+
+
         if(BulletEmitter)
         {
             BulletEmitter.Emit(BulletEmitter.emission.GetBurst(0).maxCount);
         }
+
     }
 }

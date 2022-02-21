@@ -20,11 +20,12 @@ public class SaveGameButton : MonoBehaviour
     public void ResumeGame()
     {
         igUI.SwichToInGameMenu();
+        Time.timeScale = 1;
     }
 
     public void ResetGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void SaveGame()

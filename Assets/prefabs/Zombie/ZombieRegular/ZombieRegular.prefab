@@ -88,6 +88,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieRegular
       objectReference: {fileID: 0}
+    - target: {fileID: 3991814456433647786, guid: 53a25f01160980f449be66bfb47a3d1e, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4562180332629425720, guid: 53a25f01160980f449be66bfb47a3d1e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -248,6 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bfe9c7004c056c488d7b0fed37cfe23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staminaReward: 1
+  creditReward: 0
   AttackRange: {fileID: 7372349810515782436}
 --- !u!114 &1076021880
 MonoBehaviour:

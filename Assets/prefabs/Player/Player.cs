@@ -18,7 +18,8 @@ public class Player : Character
     [SerializeField] JoyStickZ moveStick;
     [SerializeField] JoyStickZ aimStick;
     [SerializeField] List<Weapon> Weapons = new List<Weapon>();
-    Weapon CurrentWeapon;
+    [SerializeField] AudioSource audioSource;
+    public Weapon CurrentWeapon;
     CameraManager cameraManager;
     int currentWeaponIndex = 0;
     bool PlayerDead = false;
@@ -245,8 +246,12 @@ public class Player : Character
         if (CurrentWeapon != null)
         {
             CurrentWeapon.Fire();
+            audioSource.clip = CurrentWeapon.FiringSound();
+            audioSource.Play();
+
 
         }
+        
     }
 
     public void UpdateMoveStickInput()
@@ -275,7 +280,8 @@ public class Player : Character
         return new PlayerSaveData(transform.position,
             GetComponent<HealthComponent>().GetHealth(),
             GetComponent<AbilityComponent>().GetStaminaLevel(),
-            weaponNames.ToArray()
+            weaponNames.ToArray(),
+            FindObjectOfType<CreditsSystem>().GetCredits()
             );
 
     }
@@ -290,6 +296,9 @@ public class Player : Character
         healthComp.ChangeHealth(data.PlayerHealth - healthComp.GetHealth());
 
         abilityComp.ChangeStamina(data.PlayerStamina - abilityComp.GetStaminaLevel());
+
+        CreditsSystem credSystem = FindObjectOfType<CreditsSystem>();
+        credSystem.ChangeCredits(data.PlayerCredits - credSystem.GetCredits());
 
         var shops = Resources.FindObjectsOfTypeAll<ShopSystem>();
         if (shops.Length > 0)
@@ -323,17 +332,19 @@ public class Player : Character
 
     public struct PlayerSaveData
     {
-        public PlayerSaveData(Vector3 playerLoc, float playerHealth, float playerStamina, string[] weapons)
+        public PlayerSaveData(Vector3 playerLoc, float playerHealth, float playerStamina, string[] weapons, int playerCredits)
         {
             PlayerLocation = playerLoc;
             PlayerHealth = playerHealth;
             PlayerStamina = playerStamina;
             Weapons = weapons;
+            PlayerCredits = playerCredits;
         }
 
         public Vector3 PlayerLocation;
         public float PlayerHealth;
         public float PlayerStamina;
+         public int PlayerCredits;
         public string[] Weapons;
 
 

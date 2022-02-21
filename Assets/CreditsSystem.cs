@@ -16,6 +16,7 @@ public class CreditsSystem : MonoBehaviour
 
     public void ChangeCredits(int currentCredits)
     {
+        playerCredits += currentCredits;
         rewardText.text = playerCredits.ToString();
     }
 
